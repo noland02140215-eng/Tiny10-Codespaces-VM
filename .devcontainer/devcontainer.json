@@ -1,0 +1,14 @@
+{
+  "name": "Tiny10 QEMU VM",
+  "build": { "dockerfile": "Dockerfile" },
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": {
+      "label": "Tiny10 VM console (noVNC)",
+      "onAutoForward": "openBrowser",
+      "visibility": "private"
+    }
+  },
+  "remoteUser": "vscode",
+  "postCreateCommand": "mkdir -p ${containerWorkspaceFolder}/vm"
+}
