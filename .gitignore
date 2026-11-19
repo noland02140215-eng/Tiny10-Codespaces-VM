@@ -1,0 +1,5 @@
+vm/*.qcow2
+vm/*.iso
+vm/OVMF_VARS.fd
+vm/*.pid
+vm/*.log
